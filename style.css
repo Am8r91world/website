@@ -1,0 +1,439 @@
+/* General Styles */
+body {
+    font-family: "poppins", serif; /* Clean, modern professional font */
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #20a14b;
+
+}
+
+h1, h2, h3 {
+    font-weight: 800px;
+    line-height: 1.2;
+    letter-spacing: -3.6px;
+    font-size: 60px;
+    font-family: serif;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 900px;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: -.5px;
+    font-family: sans-serif;
+    
+
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #343a40;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* UTIC Brand and Icon */
+.navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color: #28a745;
+    transform: scale(1.05);
+}
+
+/* Brand Icon */
+.brand-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.brand-icon:hover {
+    transform: rotate(10deg);
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out, transform 0.3s;
+}
+
+.navbar-nav .nav-link.nav-hover:hover {
+    color: #28a745;
+    transform: scale(1.1);
+}
+
+/* Contact Button */
+.navbar-nav .nav-link.btn-primary {
+    background-color: #28a745;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link.btn-primary:hover {
+    background-color: #218838;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Navbar Toggler Animation */
+.animated-toggler {
+    transition: transform 0.3s ease-in-out;
+}
+
+.animated-toggler:active {
+    transform: rotate(90deg);
+}
+
+/* Animated Button */
+.animated-button {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.animated-button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    top: 0;
+    left: -100%;
+    transition: all 0.4s ease-in-out;
+}
+
+.animated-button:hover::after {
+    left: 100%;
+}
+
+/* Download Our App Section */
+.download-app .row {
+    min-height: 100vh;
+}
+
+/* Normal Paragraph Styling (Similar to FAQ) */
+.normal-paragraph-style {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin: 0; /* Ensure no margin */
+    padding: 0; /* Ensure no padding */
+    text-align: justify; /* Justify the paragraph text */
+}
+
+/* Video Wrapper */
+.video-wrapper {
+    max-width: 350px;
+    margin-left: auto;
+}
+
+/* Video Size & Effects */
+.video-effect {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease-in-out;
+}
+
+.video-effect:hover {
+    transform: scale(1.05);
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Download App Section Button */
+.btn-success {
+    background-color: #28a745; /* Green color */
+    border-color: #28a745;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Darker green on hover */
+    border-color: #218838;
+    transform: scale(1.05);
+}
+
+
+/* QR Code Hover Effect */
+.qr-effect {
+    width: 250px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.qr-effect:hover {
+    transform: scale(1.1);
+}
+
+/* Paragraph Styling for Scan Our Code Section */
+.paragraph-style {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin: 0; /* Ensures no margin at the start */
+    padding: 0; /* Ensures no padding at the start */
+    text-align: justify; /* Justifies the text */
+    text-indent: 0; /* No indentation */
+    width: 100%; /* Make sure it spans the full width */
+}
+
+/* Make sure the container is not adding extra padding or margin */
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Fade-In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* How It Works Section */
+.how-it-works {
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+
+/* Step Item */
+.step-item {
+    padding: 20px;
+    background: rgba(0, 123, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.step-item:hover {
+    background: rgba(0, 123, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 123, 255, 0.2);
+}
+
+/* Step Icons */
+.step-icon {
+    font-size: 40px;
+    color: #28a745 !important; /* Green color */
+    transition: transform 0.3s ease-in-out;
+}
+
+.step-item:hover .step-icon {
+    transform: scale(1.1);
+}
+
+/* Paragraph Styling - No Indentation */
+.paragraph-style {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: justify; /* Justified text */
+    text-indent: 0; /* No indentation */
+}
+
+/* Centered Text */
+.text-center {
+    text-align: center; /* Ensures text is centered */
+}
+
+
+/* Fade-In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* FAQ Section */
+.faq-section {
+    background-color: #f0f5ed; /* Light greenish background */
+    padding: 50px 0;
+    color: black; /* Standard text color */
+}
+
+/* FAQ Accordion */
+.accordion-item {
+    border: 1px solid #28a745; /* Green border */
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.accordion-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.2);
+}
+
+/* Accordion Button */
+.accordion-button {
+    background-color: #5d9636; /* Dark green */
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* When Button is Focused */
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+/* When Button is Open */
+.accordion-button:not(.collapsed) {
+    background-color: #28a745; /* Brighter green */
+    color: white;
+}
+
+/* FAQ Body */
+.accordion-body {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    padding: 20px;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer Section */
+.footer {
+    background: linear-gradient(to right, #222, #333); /* Smooth gradient */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -2px 10px rgba(56, 235, 220, 0.2); /* Adds a subtle top shadow */
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for social icons */
+.social-icon:hover {
+    color: #28a745; /* Green hover effect */
+    transform: scale(1.2); /* Slightly enlarges the icon */
+}
+
+/* Footer text */
+.footer-text {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Sticky CTA Button */
+.sticky-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #28a745;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 5px 15px rgba(84, 207, 73, 0.699);
+}
+
+/* Sticky Button Hover Effect */
+.sticky-btn:hover {
+    background: #134d20;
+    transform: translateY(-3px);
+}
